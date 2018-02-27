@@ -12,7 +12,7 @@ public class Sales{
 
 		  while(productId != 0){
 
-			  if(productId >= 1);
+			  if(productId >= 1 && productId <= 5){
 			  System.out.print("Enter quantity sold: ");
 			  int quantity = input.nextInt();
 
@@ -33,13 +33,14 @@ public class Sales{
 				  	total += quantity * 6.87;
 				    break;
 			 }
-		 }else if(productId !=0)
+		 }else
 		   System.out.println("ProductId must be 1 to 5");
 
 		 System.out.println("Please enter a product number (0 to stop): ");
+		 productId = input.nextInt();
 	 }
 	 System.out.print("Total of products sold is: ");
-	 System.out.print(Math.round(total*10000.0/10000.0));
- }
+	 System.out.println(Math.round(total*10000.0/10000.0));
+
 }
 }
