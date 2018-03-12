@@ -5,13 +5,16 @@ public class Index{
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
 
-    System.out.println("Select an option (1-4):");
+    System.out.println("Select an option (1-7):");
     System.out.println();
     System.out.println("1. Break");
     System.out.println("2. Switch");
     System.out.println("3. Methods");
     System.out.println("4. ReturnMethods");
-    System.out.println("5. Exit");
+    System.out.println("5. Shadow");
+    System.out.println("6. Overloading");
+    System.out.println("7. Reverse");
+    System.out.println("8. Exit");
 
     System.out.println();
 
@@ -37,9 +40,24 @@ public class Index{
       case 4:
 		System.out.println("ReturnMethods");
 		System.out.println();
-		Methods.main(null);
+		ReturnMethods.main(null);
         break;
       case 5:
+		System.out.println("Shadow");
+		System.out.println();
+		Shadow.main(null);
+        break;
+      case 6:
+		System.out.println("Overloading");
+		System.out.println();
+		Arithmetic.main(null);
+        break;
+      case 7:
+		System.out.println("ReverseDigits");
+		System.out.println();
+		Reverse.main(null);
+        break;
+      case 8:
         System.out.println("Exiting....");
         break;
       default:
